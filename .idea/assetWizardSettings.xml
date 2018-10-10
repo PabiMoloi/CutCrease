@@ -33,8 +33,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_arrow_back24dp" />
-                            <entry key="sourceFile" value="C:\Users\PMoloi" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic_facebook" />
+                            <entry key="sourceFile" value="C:\Users\PMoloi\Downloads\icons8-facebook.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -16,4 +16,9 @@ class SplashActivity : AppCompatActivity() {
         val intent = Intent(view.context, SignInActivity::class.java)
         view.context.startActivity(intent)
     }
+    fun startSignUpActivity(view: View)
+    {
+        val intent = Intent(view.context, SignUpActivity::class.java)
+        view.context.startActivity(intent)
+    }
 }

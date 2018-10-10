@@ -14,7 +14,6 @@
             android:theme="@style/NoAppBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -23,9 +22,13 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".SignInActivity"
+        <activity
+            android:name=".SignInActivity"
             android:parentActivityName=".SplashActivity"
-            android:theme="@style/NoAppBar"></activity>
+            android:theme="@style/NoAppBar" />
+        <activity android:name=".SignUpActivity"
+            android:theme="@style/NoAppBar"
+            android:parentActivityName=".SplashActivity"></activity>
     </application>
 
 </manifest>

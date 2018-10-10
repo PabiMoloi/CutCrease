@@ -51,6 +51,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="48dp"
         android:fontFamily="@font/poppins_light"
+        android:onClick="startSignUpActivity"
         android:text="@string/title_sign_up"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimaryLight"

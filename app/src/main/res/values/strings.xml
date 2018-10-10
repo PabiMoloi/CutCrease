@@ -6,4 +6,8 @@
     <string name="title_username">Username</string>
     <string name="title_password">Password</string>
     <string name="title_forgot_password">Forgot Password?</string>
+    <string name="title_email">Email</string>
+    <string name="title_confirm_password">Confirm Password</string>
+    <string name="title_signup_options">Sign up using</string>
+    <string name="title_google">Google</string>
 </resources>

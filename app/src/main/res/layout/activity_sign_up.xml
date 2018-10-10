@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInActivity">
+    tools:context=".SignUpActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -48,31 +48,29 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputSignInUsername"
+        android:id="@+id/textInputSignUpEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        app:hintEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewSignInLogo">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/editTextSignInUsername"
+            android:id="@+id/editTextSignUpEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
-            android:hint="@string/title_username"
+            android:hint="@string/title_email"
             android:singleLine="true"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimaryText"
+            android:textColor="@color/colorAccent"
             android:textSize="12sp" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputSignInPassword"
+        android:id="@+id/textInputSignUpPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -80,73 +78,113 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputSignInUsername"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSignUpEmail"
         app:passwordToggleEnabled="true">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/editTextSignInPassword"
+            android:id="@+id/editTextSignUpPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
             android:hint="@string/title_password"
             android:inputType="textPassword"
             android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputSignUpConfrimPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSignUpPassword"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextSignUpConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_confirm_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
             android:textSize="12sp" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/buttonSignIn"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="120dp"
+        android:id="@+id/buttonSignUpRegister"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="#d50000"
-        android:elevation="8dp"
-        android:fontFamily="@font/poppins_light"
-        android:text="@string/title_sign_in"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/title_sign_up"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonSignInSignUp"
-        tools:text="@string/title_sign_in" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSignUpConfrimPassword" />
 
-    <Button
-        android:id="@+id/buttonForgotPassword"
-        style="@style/Widget.AppCompat.Button.Borderless"
+    <View
+        android:id="@+id/dividerViewLeft"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSignUpOptions"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUpRegister" />
+
+    <TextView
+        android:id="@+id/textViewSignUpOptions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:elevation="8dp"
-        android:text="@string/title_forgot_password"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/title_signup_options"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/dividerViewRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dividerViewLeft"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUpRegister" />
+
+    <View
+        android:id="@+id/dividerViewRight"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputSignInPassword" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSignUpOptions"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUpRegister" />
 
     <Button
-        android:id="@+id/buttonSignInSignUp"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:id="@+id/buttonGoogleSignUp"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="48dp"
-        android:fontFamily="@font/poppins_light"
-        android:text="@string/title_sign_up"
-        android:textAllCaps="false"
-        android:textColor="@color/colorSecondaryDark"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSignIn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:drawablePadding="8dp"
+        android:foreground="@drawable/ic_google"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpOptions" />
 
 </android.support.constraint.ConstraintLayout>
