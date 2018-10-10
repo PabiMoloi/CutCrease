@@ -15,10 +15,12 @@ class SplashActivity : AppCompatActivity() {
     fun startSignInActivity(view: View){
         val intent = Intent(view.context, SignInActivity::class.java)
         view.context.startActivity(intent)
+        overridePendingTransition(R.anim.slide_in,R.anim.slide_out)
     }
     fun startSignUpActivity(view: View)
     {
         val intent = Intent(view.context, SignUpActivity::class.java)
         view.context.startActivity(intent)
+        overridePendingTransition(R.anim.slide_in,R.anim.slide_out)
     }
 }

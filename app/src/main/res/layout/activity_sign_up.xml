@@ -7,13 +7,13 @@
     tools:context=".SignUpActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarSignUp"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         app:navigationIcon="@drawable/ic_arrow_back24dp"
-        app:title="@string/title_sign_in" />
+        app:title="@string/title_sign_up" />
 
     <ImageView
         android:id="@+id/imageViewSignInLogo"
@@ -26,7 +26,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSignUp"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageViewSignInLogo"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSignUp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputSignUpEmail"
