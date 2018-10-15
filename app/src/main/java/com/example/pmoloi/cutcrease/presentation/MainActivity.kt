@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.presentation
 
 import android.app.ActivityOptions
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pmoloi.cutcrease.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashActivity"
+            android:name=".presentation.SplashActivity"
             android:theme="@style/NoAppBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,20 +24,20 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".SignInActivity"
-            android:parentActivityName=".SplashActivity"
+            android:name=".presentation.SignInActivity"
+            android:parentActivityName=".presentation.SplashActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".SignUpActivity"
-            android:parentActivityName=".SplashActivity"
+            android:name=".presentation.SignUpActivity"
+            android:parentActivityName=".presentation.SplashActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".BlushCategory"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".BronzerCategory"></activity>
+            android:name=".presentation.BlushCategory"
+            android:parentActivityName=".presentation.MainActivity" />
+        <activity android:name=".presentation.BronzerCategory"></activity>
     </application>
 
 </manifest>

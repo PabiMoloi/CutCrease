@@ -1,7 +1,8 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pmoloi.cutcrease.R
 
 class SignUpActivity : AppCompatActivity() {
 

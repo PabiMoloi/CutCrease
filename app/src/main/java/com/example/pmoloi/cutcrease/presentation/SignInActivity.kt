@@ -1,12 +1,12 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.presentation
 
 import android.content.Intent
 import android.os.Bundle
-import android.transition.Visibility
 import android.view.View
 import android.widget.EditText
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pmoloi.cutcrease.R
 
 class SignInActivity : AppCompatActivity() {
 
@@ -26,6 +26,6 @@ class SignInActivity : AppCompatActivity() {
         view.isEnabled = false
         val intent = Intent(view.context, MainActivity::class.java)
         view.context.startActivity(intent)
-        overridePendingTransition(R.anim.slide_in,R.anim.slide_out)
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out)
     }
 }
