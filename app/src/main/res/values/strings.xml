@@ -10,4 +10,16 @@
     <string name="title_confirm_password">Confirm Password</string>
     <string name="title_signup_options">Sign up using</string>
     <string name="title_google">Google</string>
+
+    <string name="title_blush">Blush</string>
+    <string name="title_bronzer">Bronzer</string>
+    <string name="title_eyebrow">Eyebrow</string>
+    <string name="title_eyeliner">Eyeliner</string>
+    <string name="title_eyeshadow">Eyeshadow</string>
+    <string name="title_foundation">Foundation</string>
+    <string name="title_liplinder">Lip Liner</string>
+    <string name="title_lipstick">Lipstick</string>
+    <string name="title_mascara">Mascara</string>
+    <string name="title_nailpolish">Nail Polish</string>
+
 </resources>

@@ -1,11 +1,12 @@
 package com.example.pmoloi.cutcrease
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.transition.Visibility
 import android.view.View
 import android.widget.EditText
 import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
 
 class SignInActivity : AppCompatActivity() {
 
@@ -23,5 +24,8 @@ class SignInActivity : AppCompatActivity() {
         usernameTextField.isEnabled = false
         passwordTextField.isEnabled = false
         view.isEnabled = false
+        val intent = Intent(view.context, MainActivity::class.java)
+        view.context.startActivity(intent)
+        overridePendingTransition(R.anim.slide_in,R.anim.slide_out)
     }
 }

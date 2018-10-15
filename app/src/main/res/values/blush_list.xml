@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="blush_array">
+        <item>View All</item>
+        <item>Powder</item>
+        <item>Cream</item>
+        <item>Vegan</item>
+        <item>Gluten Free</item>
+        <item>Natural</item>
+    </string-array>
+</resources>
