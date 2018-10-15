@@ -8,4 +8,11 @@
         <item>Gluten Free</item>
         <item>Natural</item>
     </string-array>
+
+    <string-array name="bronzer_array">
+        <item>View All</item>
+        <item>Powder</item>
+        <item>Vegan</item>
+        <item>Gluten Free</item>
+    </string-array>
 </resources>

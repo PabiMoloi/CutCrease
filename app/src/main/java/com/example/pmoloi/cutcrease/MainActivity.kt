@@ -17,24 +17,20 @@ class MainActivity : AppCompatActivity() {
         viewpager_main.adapter = fragmentAdapter
         tabs_main.setupWithViewPager(viewpager_main)
     }
-    fun onclick(view: View)
+
+    fun onBlushClick(view: View)
     {
-        // get the element that receives the click event
-        //val imgContainerView = view.findViewById<CardView>(R.id.cardViewBlush)
+        val imageViewBlush : ImageView = findViewById(R.id.imageViewBlush)
+        val intent = Intent(this, BlushCategory::class.java)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this, imageViewBlush, "image_transition")
+        startActivity(intent, options.toBundle())
+    }
 
-// get the common element for the transition in this activity
-        //val androidRobotView = view.findViewById<ImageView>(R.id.imageViewBlush)
-        val androidRobotView : ImageView = findViewById(R.id.imageViewBlush)
-
-// define a click listener
-      //  imgContainerView.setOnClickListener {
-            val intent = Intent(this, ProductCategoryActivity::class.java)
-            // create the transition animation - the images in the layouts
-            // of both activities are defined with android:transitionName="robot"
-            val options = ActivityOptions
-                    .makeSceneTransitionAnimation(this, androidRobotView, "image_transition")
-            // start the new activity
-            startActivity(intent, options.toBundle())
-       // }
+    fun onBronzerClick(view: View)
+    {
+        val imageViewBronzer : ImageView = findViewById(R.id.imageViewBronzer)
+        val intent = Intent(this, BronzerCategory::class.java)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this, imageViewBronzer, "bronzer_image")
+        startActivity(intent, options.toBundle())
     }
 }

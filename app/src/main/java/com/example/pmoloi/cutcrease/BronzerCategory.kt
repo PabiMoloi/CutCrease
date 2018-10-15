@@ -1,14 +1,13 @@
 package com.example.pmoloi.cutcrease
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class ProductCategoryActivity : AppCompatActivity() {
+class BronzerCategory : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_product_category)
-        supportActionBar!!.hide()
+        setContentView(R.layout.activity_bronzer_category)
     }
 
     override fun onBackPressed() {

@@ -34,9 +34,10 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/NoAppBar" />
-        <activity android:name=".ProductCategoryActivity"
-            android:parentActivityName=".MainActivity"/>
-
+        <activity
+            android:name=".BlushCategory"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".BronzerCategory"></activity>
     </application>
 
 </manifest>
