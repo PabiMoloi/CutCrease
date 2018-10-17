@@ -22,16 +22,16 @@ class MainActivity : AppCompatActivity() {
     fun onBlushClick(view: View)
     {
         val imageViewBlush : ImageView = findViewById(R.id.imageViewBlush)
-        val intent = Intent(this, BlushCategory::class.java)
+        val intent = Intent(view.context, BlushCategory::class.java)
         val options = ActivityOptions.makeSceneTransitionAnimation(this, imageViewBlush, "image_transition")
-        startActivity(intent, options.toBundle())
+        view.context.startActivity(intent, options.toBundle())
     }
 
     fun onBronzerClick(view: View)
     {
         val imageViewBronzer : ImageView = findViewById(R.id.imageViewBronzer)
-        val intent = Intent(this, BronzerCategory::class.java)
+        val intent = Intent(view.context, BronzerCategory::class.java)
         val options = ActivityOptions.makeSceneTransitionAnimation(this, imageViewBronzer, "bronzer_image")
-        startActivity(intent, options.toBundle())
+        view.context.startActivity(intent, options.toBundle())
     }
 }
