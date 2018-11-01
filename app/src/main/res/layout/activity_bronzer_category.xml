@@ -99,6 +99,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/poppins_light"
+                android:onClick="openBronzerIntent"
                 android:text="View All"
                 android:textColor="@color/colorPrimaryLight"
                 app:layout_constraintEnd_toEndOf="parent"

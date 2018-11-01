@@ -4,5 +4,6 @@ import androidx.lifecycle.LiveData
 import com.example.pmoloi.cutcrease.model.Product
 
 interface IProductsRepository{
-    fun getMakeupByProduct(productType: String): LiveData<List<Product>>
+    fun getMakeupByProduct(productType: String,successHandler: (List<Product>?) -> Unit, failureHandler: (Throwable?) -> Unit)
+    fun getProductById(id: String,successHandler: (Product?) -> Unit, failureHandler: (Throwable?) -> Unit)
 }

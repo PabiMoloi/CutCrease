@@ -1,6 +1,8 @@
 package com.example.pmoloi.cutcrease.model
 
-data class Product(val id: String? = null,
+import com.google.gson.annotations.SerializedName
+
+data class Product(@SerializedName("id") val id: String? = null,
                    val brand: String? = null,
                    val name: String? = null,
                    val price: String? = null,
