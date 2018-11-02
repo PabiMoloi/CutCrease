@@ -16,4 +16,4 @@ data class Product(@SerializedName("id") val id: String? = null,
                    val category: String? = null,
                    val product_type: String? = null,
                    val tag_list: List<kotlin.Any>? = null,
-                   val product_colors: List<ProductColor>? = null)
+                   val product_colors: ArrayList<ProductColor>? = null)

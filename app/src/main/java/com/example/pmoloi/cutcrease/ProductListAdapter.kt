@@ -1,24 +1,16 @@
 package com.example.pmoloi.cutcrease
 
-import android.app.ActionBar
-import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.Constraints
-import androidx.lifecycle.LiveData
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pmoloi.cutcrease.model.Product
 import com.example.pmoloi.cutcrease.viewmodel.ProductViewModel
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.recycler_product_list_item.view.*
+import java.util.ArrayList
 
 class ProductListAdapter(private val productViewModel: ProductViewModel): RecyclerView.Adapter<ProductListAdapter.ProductListViewHolder>() {
 
@@ -31,11 +23,6 @@ class ProductListAdapter(private val productViewModel: ProductViewModel): Recycl
         val currentProduct: Product? = productViewModel.getProductAtPosition(position)
         holder.productName.text = currentProduct?.name
         holder.brandName.text = currentProduct?.brand
-        /*holder.priceCurrency.text = currentProduct?.price_sign.toString()
-        holder.productPrice.text = currentProduct?.price
-        holder.starRating.text = currentProduct?.rating.toString()
-        holder.productTags.text = currentProduct?.tag_list.toString()
-        holder.productDescription.text = currentProduct?.description*/
         Picasso.get().load(currentProduct?.image_link).into(holder.productThumb)
 
         val bundle = Bundle()
@@ -46,6 +33,7 @@ class ProductListAdapter(private val productViewModel: ProductViewModel): Recycl
         bundle.putString("rating", currentProduct?.rating.toString())
         bundle.putString("description", currentProduct?.description)
         bundle.putString("image", currentProduct?.image_link)
+        bundle.putStringArrayList("colors", currentProduct?.product_colors as ArrayList<String>)
 
         holder.productThumb.setOnClickListener{
             view ->
@@ -59,14 +47,10 @@ class ProductListAdapter(private val productViewModel: ProductViewModel): Recycl
         var productName: TextView = view.findViewById(R.id.textViewProductName)
         var brandName: TextView = view.findViewById(R.id.textViewBrandName)
         var productThumb:ImageView = view.findViewById(R.id.imageViewProductImage)
-        /*var productPrice: TextView = view.findViewById(R.id.textViewPrice)
-        var priceCurrency: TextView = view.findViewById(R.id.textViewCurrencySign)
-        var starRating:TextView = view.findViewById(R.id.textViewRatingValue)
-        var productDescription: TextView = view.findViewById(R.id.textViewProductDescription)
-        var productTags: TextView = view.findViewById(R.id.textViewTagsValue)*/
     }
 
     override fun getItemCount(): Int {
         return productViewModel.getProductListSize()!!
     }
 }
+
