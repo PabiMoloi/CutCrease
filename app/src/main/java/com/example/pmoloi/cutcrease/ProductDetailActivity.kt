@@ -9,17 +9,27 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pmoloi.cutcrease.model.ProductColor
 import com.squareup.picasso.Picasso
 
-
 class ProductDetailActivity : AppCompatActivity() {
+
+   private lateinit var extras: Bundle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail)
-
+        extras = intent.extras
         supportActionBar?.hide()
-        val extras = intent.extras
+        populateFields()
+        setUpRecyclerView()
+    }
+
+    private fun setUpRecyclerView(){
         val recyclerView: RecyclerView = findViewById(R.id.recyclerViewProductColors)
-        val adapter = ColorsAdapter(extras?.getStringArrayList("colors") as ArrayList<ProductColor>)
+        val adapter = ColorsAdapter(extras.getStringArrayList("colors") as ArrayList<ProductColor>)
+        recyclerView.layoutManager = GridLayoutManager(applicationContext,2)
+        recyclerView.adapter = adapter
+    }
+
+    private fun populateFields(){
 
         val productName: TextView = findViewById(R.id.textViewProductName)
         val brand: TextView = findViewById(R.id.textViewBrandName)
@@ -31,8 +41,7 @@ class ProductDetailActivity : AppCompatActivity() {
         brand.text = extras.getString("brandName")
         productName.text = extras.getString("productName")
         productPrice.text = extras.getString("price")
+        productRating.text = extras.getString("rating")
         productDescription.text = extras.getString("description")
-        recyclerView.layoutManager = GridLayoutManager(applicationContext,2)
-        recyclerView.adapter = adapter
     }
 }

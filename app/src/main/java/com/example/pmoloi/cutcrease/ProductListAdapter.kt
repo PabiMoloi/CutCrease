@@ -33,6 +33,7 @@ class ProductListAdapter(private val productViewModel: ProductViewModel): Recycl
         bundle.putString("rating", currentProduct?.rating.toString())
         bundle.putString("description", currentProduct?.description)
         bundle.putString("image", currentProduct?.image_link)
+        bundle.putString("rating", currentProduct?.rating.toString())
         bundle.putStringArrayList("colors", currentProduct?.product_colors as ArrayList<String>)
 
         holder.productThumb.setOnClickListener{

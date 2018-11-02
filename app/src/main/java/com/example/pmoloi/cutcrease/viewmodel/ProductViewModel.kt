@@ -16,7 +16,7 @@ class ProductViewModel(private val application: Application): ViewModel() {
 
     fun getMakeUpByProduct(productType: String): LiveData<List<Product>> {
         productRepository = RepositoryInjectorUtil.getInstance(application)
-       productRepository.getMakeupByProduct(
+        productRepository.getMakeupByProduct(
            productType,
                {
                    response.value = it

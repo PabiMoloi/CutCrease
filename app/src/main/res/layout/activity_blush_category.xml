@@ -56,7 +56,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorPrimary"
                 android:fontFamily="@font/poppins_light"
-                android:text="Powder"
+                android:text="@string/title_powder"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewProductCategory" />
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorPrimary"
                 android:fontFamily="@font/poppins_light"
-                android:text="Cream"
+                android:text="@string/title_cream"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -86,7 +86,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorPrimary"
                 android:fontFamily="@font/poppins_light"
-                android:text="Hypoallergenic"
+                android:text="@string/title_hypoallergenic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button5" />
@@ -102,7 +102,7 @@
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/poppins_light"
                 android:onClick="openBlushIntent"
-                android:text="View All"
+                android:text="@string/title_view_all"
                 android:textColor="@color/colorPrimaryLight"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

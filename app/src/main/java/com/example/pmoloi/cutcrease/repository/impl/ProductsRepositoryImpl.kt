@@ -23,17 +23,4 @@ class ProductsRepositoryImpl(private var retrofitService: RetrofitService) : IPr
             })
         }
     }
-
-    override fun getProductById(id: String, successHandler: (Product?) -> Unit, failureHandler: (Throwable?) -> Unit) {
-        run{
-            retrofitService.getProductById(id).enqueue(object: Callback<Product>{
-                override fun onResponse(call: Call<Product>, response: Response<Product>) {
-                    response.body().let(successHandler)
-                }
-                override fun onFailure(call: Call<Product>, t: Throwable) {
-                    failureHandler(t)
-                }
-            })
-        }
-    }
 }

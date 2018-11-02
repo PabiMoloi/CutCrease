@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="R"
+                android:text="@string/title_currency_sign"
                 android:textColor="@color/colorSecondaryLight"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewBrandName" />
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Star Rating:"
+                android:text="@string/title_star_rating"
                 android:textColor="@color/colorAccent"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -126,12 +126,12 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="4.5"
                 android:textColor="@color/colorAccent"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textViewRatingLabel"
-                app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrice"
+                tools:text="4.5" />
 
             <TextView
                 android:id="@+id/textViewDescription"

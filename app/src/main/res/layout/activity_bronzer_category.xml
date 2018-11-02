@@ -55,7 +55,8 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorPrimary"
-                android:text="Powder"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/title_powder"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewProductCategory" />
@@ -69,7 +70,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorPrimary"
-                android:text="Gluten Free"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/title_gluten_free"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -84,7 +86,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@color/colorPrimary"
                 android:fontFamily="@font/poppins_light"
-                android:text="Hypoallergenic"
+                android:text="@string/title_hypoallergenic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button5" />
@@ -100,7 +102,7 @@
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/poppins_light"
                 android:onClick="openBronzerIntent"
-                android:text="View All"
+                android:text="@string/title_view_all"
                 android:textColor="@color/colorPrimaryLight"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
