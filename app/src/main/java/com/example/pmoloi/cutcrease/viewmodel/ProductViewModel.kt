@@ -11,11 +11,31 @@ import com.example.pmoloi.cutcrease.repository.IProductsRepository
 class ProductViewModel(private val application: Application): ViewModel() {
 
     private lateinit var productRepository: IProductsRepository
-    private var response: LiveData<List<Product>> = MutableLiveData()
+    var response: MutableLiveData<List<Product>> = MutableLiveData()
+    var error = MutableLiveData<Throwable>()
 
     fun getMakeUpByProduct(productType: String): LiveData<List<Product>> {
         productRepository = RepositoryInjectorUtil.getInstance(application)
-        response = productRepository.getMakeupByProduct(productType)
+        productRepository.getMakeupByProduct(
+           productType,
+               {
+                   response.value = it
+               },
+               {
+                   error.value = it
+               }
+               )
         return response
+    }
+
+    fun getProductListSize(): Int? {
+        response.value?.let {
+            return it.size
+        }
+        return 0
+    }
+
+    fun getProductAtPosition(position: Int): Product? {
+        return response.value?.get(position)
     }
 }

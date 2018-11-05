@@ -22,4 +22,12 @@
     <string name="title_mascara">Mascara</string>
     <string name="title_nailpolish">Nail Polish</string>
 
+    <string name="title_powder">POWDER</string>
+    <string name="title_cream">CREAM</string>
+    <string name="title_hypoallergenic">HYPOALLERGIC</string>
+    <string name="title_view_all">VIEW ALL</string>
+    <string name="title_gluten_free">Gluten Free</string>
+    <string name="title_currency_sign">R</string>
+    <string name="title_star_rating">Star Rating:</string>
+
 </resources>
