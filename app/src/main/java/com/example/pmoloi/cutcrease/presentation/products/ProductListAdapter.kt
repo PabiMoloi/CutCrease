@@ -1,5 +1,8 @@
 package com.example.pmoloi.cutcrease
 
+import android.app.Activity
+import android.app.ActivityOptions
+import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater

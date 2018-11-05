@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.util
 
 import android.content.Context
 import com.example.pmoloi.cutcrease.network.RetrofitService

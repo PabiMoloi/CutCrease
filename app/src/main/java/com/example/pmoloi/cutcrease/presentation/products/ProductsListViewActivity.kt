@@ -1,15 +1,13 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.presentation.products
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.ProgressBar
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pmoloi.cutcrease.R
 import com.example.pmoloi.cutcrease.model.Product
-import com.example.pmoloi.cutcrease.viewmodel.ProductViewModel
 
 class ProductsListViewActivity : AppCompatActivity() {
 

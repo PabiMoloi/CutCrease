@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.signIn
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pmoloi.cutcrease.R
+import com.example.pmoloi.cutcrease.presentation.main.MainActivity
 
 class SignInActivity : AppCompatActivity() {
 
