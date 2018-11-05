@@ -1,9 +1,8 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.presentation.products
 
 import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
-import android.app.Application
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pmoloi.cutcrease.R
 
 class RecyclerShimmerAdapter : RecyclerView.Adapter<RecyclerShimmerAdapter.RecyclerShimmerViewHolder>() {
 

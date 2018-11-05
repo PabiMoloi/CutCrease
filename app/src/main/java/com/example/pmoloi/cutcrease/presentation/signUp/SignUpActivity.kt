@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.signUp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".presentation.SplashActivity"
+            android:name=".presentation.splash.SplashActivity"
             android:theme="@style/NoAppBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,25 +26,25 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".presentation.SignInActivity"
-            android:parentActivityName=".presentation.SplashActivity"
+            android:name=".presentation.signIn.SignInActivity"
+            android:parentActivityName=".presentation.splash.SplashActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".presentation.SignUpActivity"
-            android:parentActivityName=".presentation.SplashActivity"
+            android:name=".presentation.signUp.SignUpActivity"
+            android:parentActivityName=".presentation.splash.SplashActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".presentation.MainActivity"
+            android:name=".presentation.main.MainActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".presentation.BlushCategory"
-            android:parentActivityName=".presentation.MainActivity" />
+            android:name=".presentation.category.BlushCategory"
+            android:parentActivityName=".presentation.main.MainActivity" />
         <activity
-            android:name=".presentation.BronzerCategory"
-            android:parentActivityName=".presentation.MainActivity" />
-        <activity android:name=".ProductDetailActivity"
+            android:name=".presentation.category.BronzerCategory"
+            android:parentActivityName=".presentation.main.MainActivity" />
+        <activity android:name=".presentation.products.ProductDetailActivity"
             android:theme="@style/NoAppBar"/>
-        <activity android:name=".ProductsListViewActivity"></activity>
+        <activity android:name=".presentation.products.ProductsListViewActivity"></activity>
     </application>
 
 </manifest>

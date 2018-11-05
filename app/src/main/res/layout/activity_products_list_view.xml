@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorSecondaryText"
-    tools:context=".ProductsListViewActivity">
+    tools:context=".presentation.products.ProductsListViewActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarProductList"

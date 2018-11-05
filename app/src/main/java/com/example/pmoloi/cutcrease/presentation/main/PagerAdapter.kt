@@ -1,8 +1,10 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.main
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.pmoloi.cutcrease.presentation.brands.BrandsFragment
+import com.example.pmoloi.cutcrease.presentation.products.ProductFragment
 
 class PagerAdapter(fragmentManager: FragmentManager): FragmentPagerAdapter(fragmentManager) {
     override fun getItem(position: Int): Fragment {
