@@ -2,6 +2,8 @@
 
 CutCrease is an Android application that displays a list of make up products for purchase.
 
+[![CircleCI](https://circleci.com/gh/PabiMoloi/CutCrease.svg?style=svg)](https://circleci.com/gh/PabiMoloi/CutCrease)
+
 
 # ScreenShots
 ![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/splash.png)
