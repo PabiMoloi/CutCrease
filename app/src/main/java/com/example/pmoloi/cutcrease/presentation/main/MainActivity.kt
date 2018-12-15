@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.main
 
 import android.app.ActivityOptions
 import android.content.Intent
@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pmoloi.cutcrease.R
+import com.example.pmoloi.cutcrease.presentation.category.BlushCategory
+import com.example.pmoloi.cutcrease.presentation.category.BronzerCategory
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

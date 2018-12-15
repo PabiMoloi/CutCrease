@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.productList
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pmoloi.cutcrease.R
 import com.example.pmoloi.cutcrease.model.Product
+import com.example.pmoloi.cutcrease.presentation.product.RecyclerShimmerAdapter
 import com.example.pmoloi.cutcrease.viewmodel.ProductViewModel
 
 class ProductsListViewActivity : AppCompatActivity() {

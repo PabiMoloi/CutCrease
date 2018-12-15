@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.productList
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pmoloi.cutcrease.R
 import com.example.pmoloi.cutcrease.model.Product
+import com.example.pmoloi.cutcrease.presentation.product.ProductDetailActivity
 import com.example.pmoloi.cutcrease.viewmodel.ProductViewModel
 import com.squareup.picasso.Picasso
 import java.util.ArrayList

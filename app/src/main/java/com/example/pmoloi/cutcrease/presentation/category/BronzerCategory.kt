@@ -1,10 +1,11 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.category
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.pmoloi.cutcrease.R
+import com.example.pmoloi.cutcrease.presentation.productList.ProductsListViewActivity
 
 class BronzerCategory : AppCompatActivity() {
 

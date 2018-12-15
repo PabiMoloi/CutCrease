@@ -15,13 +15,13 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".presentation.SplashActivity"
+            android:name=".presentation.splash.SplashActivity"
             android:theme="@style/NoAppBar">
-          <!--  <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            </intent-filter>
         </activity>
 
         <meta-data
@@ -29,34 +29,29 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".presentation.SignInActivity"
-            android:parentActivityName=".presentation.SplashActivity"
+            android:name=".presentation.signin.SignInActivity"
+            android:parentActivityName=".presentation.splash.SplashActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".presentation.SignUpActivity"
-            android:parentActivityName=".presentation.SplashActivity"
+            android:name=".presentation.signup.SignUpActivity"
+            android:parentActivityName=".presentation.splash.SplashActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".presentation.MainActivity"
+            android:name=".presentation.main.MainActivity"
             android:theme="@style/NoAppBar" />
         <activity
-            android:name=".presentation.BlushCategory"
-            android:parentActivityName=".presentation.MainActivity" />
+            android:name=".presentation.category.BlushCategory"
+            android:parentActivityName=".presentation.main.MainActivity" />
         <activity
-            android:name=".presentation.BronzerCategory"
-            android:parentActivityName=".presentation.MainActivity" />
+            android:name=".presentation.category.BronzerCategory"
+            android:parentActivityName=".presentation.main.MainActivity" />
         <activity
-            android:name=".presentation.ProductDetailActivity"
+            android:name=".presentation.product.ProductDetailActivity"
             android:theme="@style/NoAppBar" />
-        <activity android:name=".presentation.ProductsListViewActivity" />
+        <activity android:name=".presentation.productList.ProductsListViewActivity" />
         <activity
-            android:name=".presentation.OrderActivity"
+            android:name=".presentation.order.OrderActivity"
             android:theme="@style/NoAppBar" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
     </activity>
     </application>
 

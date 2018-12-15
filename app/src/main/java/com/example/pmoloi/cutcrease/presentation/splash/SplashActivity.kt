@@ -1,10 +1,12 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.splash
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pmoloi.cutcrease.R
+import com.example.pmoloi.cutcrease.presentation.signin.SignInActivity
+import com.example.pmoloi.cutcrease.presentation.signup.SignUpActivity
 
 class SplashActivity : AppCompatActivity() {
 

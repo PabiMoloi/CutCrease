@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.product
 
 import android.os.Bundle
 import android.view.LayoutInflater

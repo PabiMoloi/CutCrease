@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.order
 
 import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity

@@ -1,10 +1,11 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.category
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pmoloi.cutcrease.R
+import com.example.pmoloi.cutcrease.presentation.productList.ProductsListViewActivity
 
 class BlushCategory : AppCompatActivity() {
 

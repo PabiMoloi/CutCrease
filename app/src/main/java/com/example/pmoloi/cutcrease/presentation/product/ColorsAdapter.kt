@@ -1,4 +1,4 @@
-package com.example.pmoloi.cutcrease.presentation
+package com.example.pmoloi.cutcrease.presentation.product
 
 import android.graphics.Color
 import android.view.LayoutInflater
