@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.pmoloi.cutcrease.ProductsListViewActivity
 import com.example.pmoloi.cutcrease.R
 
 class BronzerCategory : AppCompatActivity() {

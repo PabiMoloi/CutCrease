@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.pmoloi.cutcrease.ProductsListViewActivity
 import com.example.pmoloi.cutcrease.R
 
 class BlushCategory : AppCompatActivity() {
@@ -20,7 +19,7 @@ class BlushCategory : AppCompatActivity() {
     }
 
     fun openBlushIntent(view: View){
-        val intent = Intent(this,ProductsListViewActivity::class.java)
+        val intent = Intent(this, ProductsListViewActivity::class.java)
         intent.putExtra("category", "blush")
         startActivity(intent)
     }

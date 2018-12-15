@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.pmoloi.cutcrease.RepositoryInjectorUtil
+import com.example.pmoloi.cutcrease.util.RepositoryInjectorUtil
 import com.example.pmoloi.cutcrease.model.Product
 import com.example.pmoloi.cutcrease.repository.IProductsRepository
 

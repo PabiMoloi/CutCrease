@@ -1,9 +1,8 @@
-package com.example.pmoloi.cutcrease
+package com.example.pmoloi.cutcrease.presentation
 
 import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
-import android.app.Application
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -11,17 +10,19 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pmoloi.cutcrease.R
 
 class RecyclerShimmerAdapter : RecyclerView.Adapter<RecyclerShimmerAdapter.RecyclerShimmerViewHolder>() {
 
     override fun onBindViewHolder(holder: RecyclerShimmerViewHolder, position: Int) {
 
-        animateObjects(holder.shimmerBrandName,"backgroundColor")
-        animateObjects(holder.shimmerProductName,"backgroundColor")
-        animateObjects(holder.shimmerProductThumb,"backgroundColor")
+        animateRecyclerViews(holder.shimmerBrandName,"backgroundColor")
+        animateRecyclerViews(holder.shimmerProductName,"backgroundColor")
+        animateRecyclerViews(holder.shimmerProductThumb,"backgroundColor")
     }
 
-    private fun animateObjects(target: Any, property: String){
+    private fun animateRecyclerViews(target: Any, property: String){
+
         val objectAnimator = ObjectAnimator.ofObject(target,
                 property,
                 ArgbEvaluator(),
