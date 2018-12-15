@@ -4,7 +4,12 @@ CutCrease is an Android application that displays a list of make up products for
 
 
 # ScreenShots
+![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/splash.png)
+![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/login.png)
+![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/landing.png)
 ![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/blush.png)
+![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/product.png)
+![Screenshot](https://github.com/PabiMoloi/CutCrease/blob/develop/art/product_detail.png)
 
 # Libraries
 - Picasso
